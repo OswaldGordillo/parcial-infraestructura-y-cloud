@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="es" xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML ESTRUCTURAL</title>
+
+    <style>
+        * {
+            border: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer{
+            border: 2px solid black;
+            background: #165b7b;
+            color: white;
+            text-align: center;
+
+        }
+
+        #contenedorPrincipal{
+            border: 2px solid black;
+            padding:10px;
+            width:  700px;
+            margin : 0 auto;
+            background-color: white;
+        }
+
+        .caja{
+            border: 2px solid red;
+            text-align: center;
+        }
+
+        .s1{
+            float: left;
+            width: 23.5%;
+            margin: 0.75%;
+            height: 120px;
+            line-height: 120px;
+            
+        }
+
+        .s2{
+            float: left;
+            width: 31.33%;
+            margin: 1%;
+            height: 150px;
+        }
+
+        .s2_i{
+            line-height: 150px;
+        }
+        .s2_d{
+            border:none;
+        }
+        .s2_d_superior{
+            height:70px;
+            margin-bottom: 10px;
+            line-height: 70px;
+        }
+        .s2_d_inferior{
+            height:70px;
+            margin-bottom: 10px;
+            line-height: 70px;
+            background-color: orange;
+        }
+        .s3_superior{
+            float:left;
+            height:100px;
+            margin:3px;
+            margin-bottom: 10px;
+            line-height: 100px;
+            width: 49%;
+        }
+        .s3_inferior{
+            float: left;
+            width: 100%;
+            height:100px;
+            line-height: 100px;
+        }
+        .seccion {
+            border: 2px solid #32dc32;
+            padding: 5px;
+            margin-bottom:10px;
+            overflow: hidden;
+        }
+        .naranja{
+            background-color:orange;
+        }
+        @media(max-width: 768px){
+        #contenedorPrincipal{
+            border: 2px solid black;
+            padding:10px;
+            max-width:  95%px;
+            margin : 0 auto;
+            background-color: white;
+        }
+        .s1{
+            float: none;
+            width: 100%;
+            margin: 0.75%;
+            line-height: 120px;
+            
+        }
+
+        .s2{
+            float: none;
+            width: 100%;
+            margin: 0.75%;
+            height:120px;
+        }
+
+        .s2_i{
+            line-height: 120px;
+
+        }
+        .s2_d{
+            border:none;
+            height:250px;
+            
+        }
+        .s2_d_superior{
+            margin-bottom: 10px;
+            line-height: 120px;
+            width: 100%;
+            height:120px;
+        }
+        .s2_d_inferior{
+            margin-bottom: 10px;
+            line-height: 120px;
+            background-color: orange;
+            width: 100%;
+            height:120px;
+        }
+        .s3_superior{
+            float: none;
+            margin:1px;
+            margin-bottom: 10px;
+            line-height: 100px;
+            width: 100%;
+        }
+        .s3_inferior{
+            float: none;
+            width: 100%;
+            line-height: 100px;
+        }
+        .texto::after{
+            content: "(movil)";
+        }
+        .c{
+            background-image: url("subnautica.jfif");
+            background-position: center;
+            background-size: 100%;
+            
+        }
+        .c2{
+            background-image: url("subnautica2.0.png");
+            background-position: center;
+            background-size: 110%;
+        }
+        .fondo{
+            background-image: url("portada de subnautica.webp");
+            background-position: center;
+            background-size: 100%;
+        }
+        }
+        @media(min-width: 769px) and (max-width: 1024px){
+        #contenedorPrincipal{
+            border: 2px solid black;
+            padding:10px;
+            max-width:  95%px;
+            margin : 0 auto;
+            background-color: white;
+        }
+        .s1{
+            float: left;
+            width: 48%;
+            margin: 0.75%;
+            height: 120px;
+            line-height: 120px;
+        }
+
+        .s2{
+            float: left;
+            width: 31.33%;
+            margin: 1%;
+            height: 150px;
+        }
+
+        .s2_i{
+            line-height: 150px;
+        }
+        .s2_d{
+            border:none;
+            
+        }
+        .s2_d_superior{
+            height:70px;
+            margin-bottom: 10px;
+            line-height: 70px;
+        }
+        .s2_d_inferior{
+            height:70px;
+            margin-bottom: 10px;
+            line-height: 70px;
+            background-color: orange;
+        }
+        .s3_superior{
+            float:left;
+            height:100px;
+            margin:3px;
+            margin-bottom: 10px;
+            line-height: 100px;
+            width: 49%;
+        }
+        .s3_inferior{
+            float: left;
+            width: 100%;
+            height:100px;
+            line-height: 100px;
+        }
+        .texto::after{
+            content: "(tablet)";
+        }
+        .c{
+            background-image: url("subnautica.jfif");
+            background-position: center;
+            background-size: 100%;
+            
+        }
+        .c2{
+            background-image: url("subnautica2.0.png");
+            background-position: center;
+            background-size: 110%;
+        }
+        .fondo{
+            background-image: url("portada de subnautica.webp");
+            background-position: center;
+            background-size: 100%;
+        }
+        }
+        @media(min-width: 1025px){
+        #contenedorPrincipal{
+            border: 2px solid black;
+            padding:10px;
+            max-width:  95%px;
+            margin : 0 auto;
+            background-color: white;
+        }
+        .s1{
+            float: left;
+            width: 23.5%;
+            margin: 0.75%;
+            height: 120px;
+            line-height: 120px;
+            
+        }
+
+        .s2{
+            float: left;
+            width: 31.33%;
+            margin: 1%;
+            height: 150px;
+        }
+
+        .s2_i{
+            line-height: 150px;
+        }
+        .s2_d{
+            border:none;
+        }
+        .s2_d_superior{
+            height:70px;
+            margin-bottom: 10px;
+            line-height: 70px;
+        }
+        .s2_d_inferior{
+            height:70px;
+            margin-bottom: 10px;
+            line-height: 70px;
+            background-color: orange;
+        }
+        .s3_superior{
+            float:left;
+            height:100px;
+            margin:3px;
+            margin-bottom: 10px;
+            line-height: 100px;
+            width: 49%;
+        }
+        .s3_inferior{
+            float: left;
+            width: 100%;
+            height:100px;
+            line-height: 100px;
+        }
+        .c{
+            background-image: url("subnautica.jfif");
+            background-position: center;
+            background-size: 136%;
+            
+        }
+        .c2{
+            background-image: url("subnautica2.0.png");
+            background-position: center;
+            background-size: 110%;
+        }
+        .fondo{
+            background-image: url("portada de subnautica.webp");
+            background-position: center;
+            background-size: 100%;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="contenedorPrincipal">
+
+        <!-- SECCIÓN 1-->
+        <div class="seccion">
+            <div class="caja s1"  ><p class = texto>estructuras del juego</p></div>
+            <div class="caja s1 c"><p class = no></p></div>
+            <div class="caja s1 "><p class = no><div class="tenor-gif-embed" data-postid="21440629" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%" data-height="100%"><a href="https://tenor.com/view/we-do-a-little-trolling-subnautica-sunbeam-gif-21440629">We Do A Little Trolling Subnautica GIF</a>from <a href="https://tenor.com/search/we+do+a+little+trolling-gifs">We Do A Little Trolling GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></p></div>
+            <div class="caja s1 naranja"><p class = texto></p></div>
+        </div>
+
+        <!-- SECCIÓN 2-->
+
+        <div class="seccion">
+            <div class="caja s2 s2_i"><p class = no><div class="tenor-gif-embed" data-postid="14965603261239204595" data-share-method="host" data-aspect-ratio="1.76596" data-width="100%" data-height="100%"><a href="https://tenor.com/view/subnautica-subnautica2-subnautica-2-thalassophobia-spooky-gif-14965603261239204595">Subnautica Subnautica2 GIF</a>from <a href="https://tenor.com/search/subnautica-gifs">Subnautica GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></p></div>
+            <div class="caja s2 s2_i c2"><p class = no></p></div>
+
+            <div class="s2 s2_d">
+                <div class="caja s2_d_superior "><p class = texto>biomas del juego</p></div>
+                <div class="caja s2_d_inferior"><p class = texto></p></div>
+            </div>
+        </div>
+
+        <!-- SECCIÓN 3-->
+
+        <div class="seccion">
+            <div class="caja s3_superior"><p class = no><div class="tenor-gif-embed" data-postid="17615359490920597256" data-share-method="host" data-aspect-ratio="1.76596" data-width="100%" data-height="100%"><a href="https://tenor.com/view/guys-what%27s-going-on-my-face-is-going-flat-gif-17615359490920597256">Guys What&#39;S Going On My Face Is Going Flat Meme</a>from <a href="https://tenor.com/search/guys+what%27s+going+on+my+face+is+going+flat-memes">Guys What&#39;S Going On My Face Is Going Flat Memes</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></p></div>
+            <div class="caja s3_superior"><p class = no><div class="tenor-gif-embed" data-postid="5582879239754830404" data-share-method="host" data-aspect-ratio="0.7751" data-width="100%" data-height="100%"><a href="https://tenor.com/view/oxygen-subnautica-gif-5582879239754830404">Oxygen Subnautica Meme</a>from <a href="https://tenor.com/search/oxygen-memes">Oxygen Memes</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script></p></div>
+            
+            <div class="caja s3_inferior fondo"><p class = no></p></div>
+
+        </div>
+
+        <footer>
+            OSWALD EDUARDO GORDILLO GUTIERREZ - 07-06-2007
+        </footer>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demostración - Responsive Design</title>
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+ 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2c3e50;
+        }
+ 
+        .caja-demostrativa {
+            width: 90%;
+            padding: 30px 20px;
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: all 0.5s ease-in-out;
+        }
+ 
+        .caja-demostrativa p {
+            margin-top: 15px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        @media(max-width: 768px){
+            .caja-demostrativa {
+            width: 95%;
+            padding: 30px 20px;
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: all 0.5s ease-in-out;
+        }
+        }
+        @media(max-width: 1024px){
+            .caja-demostrativa {
+            width: 95%;
+            padding: 30px 20px;
+            background-color: #d6e73c;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: all 0.5s ease-in-out;
+        }
+        }
+        @media(min-width:1025px){
+            .caja-demostrativa {
+            width: 95%;
+            padding: 30px 20px;
+            background-color: #3ce745;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: all 0.5s ease-in-out;
+        }
+        }
+</style>
+</head>
+ 
+ 
+<body>
+ 
+    <div class="caja-demostrativa">
+<h1 class="titulo-estado">Resolución Actual:</h1>
+<p>Por favor, redimensiona la ventana de tu navegador de izquierda a derecha. Observa cómo el color, el tamaño, los bordes redondeados y este mismo texto cambian suavemente gracias a las <strong>Media Queries</strong> y la propiedad <strong>Transition</strong>.</p>
+</div>
+ 
+</body>
+</html>
